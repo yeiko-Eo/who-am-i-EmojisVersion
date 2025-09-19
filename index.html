@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¿Quién soy? - Emojis</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Foldit:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ropa+Sans:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>¿Quién soy? <br>- Versión Emojis -</h1>
+
+    <div class="teams-container">
+        <!-- Team 1 -->
+        <div class="team" id="equipo1">
+            <input type="text" id="nombreEquipo1" placeholder="Nombre del Equipo 1" onchange="actualizarNombreEquipo(1)" />
+            <ul class="participants" id="listaEquipo1"></ul>
+            <input type="text" id="nuevoParticipante1" placeholder="Agregar participante" />
+            <button onclick="agregarParticipante(1)">Agregar</button>
+            <div class="score" id="score1">Puntos: 0</div>
+            <button class="btn-score" onclick="sumarPunto(1)">+1 Punto</button>
+            <button class="btn-reveal" onclick="restarPunto(1)">-1 Punto</button>
+        </div>
+
+        <!-- Team 2 -->
+        <div class="team" id="equipo2">
+            <input type="text" id="nombreEquipo2" placeholder="Nombre del Equipo 2" onchange="actualizarNombreEquipo(2)" />
+            <ul class="participants" id="listaEquipo2"></ul>
+            <input type="text" id="nuevoParticipante2" placeholder="Agregar participante" />
+            <button onclick="agregarParticipante(2)">Agregar</button>
+            <div class="score" id="score2">Puntos: 0</div>
+            <button class="btn-score" onclick="sumarPunto(0)">+1 punto</button>
+            <button class="btn-reveal" onclick="restarPunto(0)">-1 Punto</button>
+        </div>
+    </div>
+
+    <div class="game-area">
+        <h2>¿Quién soy?</h2>
+        <!-- Clues area -->
+        <div class="pistas" id="pistas">
+            <p>Cargando pistas...</p>
+        </div>
+        <!-- Reveal answer button -->
+        <button class="btn-reveal" onclick="mostrarRespuesta()">Mostrar respuesta</button>
+        <div class="respuesta" id="respuesta"></div>
+        <br />
+        <!-- Next character button -->
+        <button onclick="cargarNuevoPersonaje()">Siguiente personaje</button>
+    </div>
+
+    <!-- Main JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
