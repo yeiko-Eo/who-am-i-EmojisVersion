@@ -19,5 +19,17 @@
   { "respuesta": "Pedro", "pistas": ["🐟⛵🔑"] },
   { "respuesta": "María", "pistas": ["👩👶⭐"] },
   { "respuesta": "Juan el Bautista", "pistas": ["🌊🪶✝️"] },
-  { "respuesta": "Salomón", "pistas": ["👑📚💰"] }
+  { "respuesta": "Salomón", "pistas": ["👑📚💰"] },
+  { "respuesta": "Rut", "pistas": ["👩‍🌾🤝⭐"] },
+  { "respuesta": "Gedeón", "pistas": ["🌾🔥📯"] },
+  { "respuesta": "Sansón", "pistas": ["💪✂️🦁"] },
+  { "respuesta": "Saúl", "pistas": ["👑🗡️🏹"] },
+  { "respuesta": "Aarón", "pistas": ["👬🪄📯"] },
+  { "respuesta": "Isaías", "pistas": ["📜👁️🔥"] },
+  { "respuesta": "Jeremías", "pistas": ["📜😭🌧️"] },
+  { "respuesta": "Nehemías", "pistas": ["🏗️🧱🎚️"] },
+  { "respuesta": "Lázaro", "pistas": ["🪦✝️➡️"] },
+  { "respuesta": "Marta", "pistas": ["🏠🍽️👭"] },
+  { "respuesta": "Lucas", "pistas": ["🖊️📖🩺"] },
+  { "respuesta": "Mateo", "pistas": ["💰✍️✝️"] }
 ]
